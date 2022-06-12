@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", Arial;
+}
+
+body {
+  background-color: #f7e9dc;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-card {
+  background-color: hsl(10, 79%, 65%);
+  color: #fffcf7;
+  width: 500px;
+  height: 100px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.balance-card::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  inset: 0;
+  top: calc(50% - 20px);
+  left: 80%;
+  z-index: 2;
+}
+
+.balance-card::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 100%;
+  border: 2px solid #000;
+  inset: 0;
+  top: calc(50% - 20px);
+  left: 85%;
+  z-index: 2;
+}
+
+.spending-card {
+  background-color: #fff;
+  width: 500px;
+  height: 400px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spending-card h2 {
+  font-weight: 700;
+}
+
+.chart {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 130px 1.5rem;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: end;
+  margin-top: 3rem;
+}
+
+.chart-day {
+  align-self: center;
+}
+
+.number-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  background-color: hsl(10, 79%, 65%);
+  height: 140px;
+  width: 40px;
+  border-radius: 5px;
+  align-items: end;
+  position: relative;
+}
+
+.bar:hover {
+  background-color: #75b6bc;
+}
+
+.chart > p {
+  font-size: 0.8rem;
+  color: hsl(28, 10%, 53%);
+}
+
+hr {
+  margin-top: 1.25rem;
+  margin-bottom: 1.75rem;
+  color: lightgray;
+  background-color: lightgray;
+  border: 0px;
+  height: 1px;
+}
+
+.balance-header {
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.balance-number {
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+}
+
+.total-spending-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.total-spending-card p {
+  font-size: 0.8rem;
+  color: hsl(28, 10%, 53%);
+}
+
+.spending-section {
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.spending-change-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.spending-number {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.spending-change-number {
+  font-weight: bold;
+}
+
+.day-number {
+  display: none;
+}
+
+.number-bar:hover > .day-number {
+  display: block;
+}

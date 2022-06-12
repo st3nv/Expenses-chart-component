@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+    <script src="script.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <div class="container">
+      <div class="balance-card">
+        <h2 class="balance-header">My balance</h2>
+        <h2 class="balance-number" data-balance>$921.48</h2>
+      </div>
+      <div class="spending-card">
+        <h2>Spending - Last 7 days</h2>
+        <div class="chart">
+          <div class="number-bar" data-day="mon">
+            <p class="day-number">123</p>
+            <div class="bar"></div>
+          </div>
+          <div class="number-bar" data-day="tue">
+            <p class="day-number">123</p>
+            <div class="bar"></div>
+          </div>
+          <div class="number-bar" data-day="wed">
+            <p class="day-number">13</p>
+            <div class="bar"></div>
+          </div>
+          <div class="number-bar" data-day="thu">
+            <p class="day-number">23</p>
+            <div class="bar"></div>
+          </div>
+          <div class="number-bar" data-day="fri">
+            <p class="day-number">333</p>
+            <div class="bar"></div>
+          </div>
+          <div class="number-bar" data-day="sat">
+            <p class="day-number">12</p>
+            <div class="bar"></div>
+          </div>
+          <div class="number-bar" data-day="sun">
+            <p class="day-number">231</p>
+            <div class="bar"></div>
+          </div>
+          <p>Mon</p>
+          <p>Tue</p>
+          <p>Wed</p>
+          <p>Thu</p>
+          <p>Fri</p>
+          <p>Sat</p>
+          <p>Sun</p>
+        </div>
+        <hr />
+        <div class="total-spending-card">
+          <p>Total this month</p>
+          <div class="spending-section">
+            <h2 class="spending-number" data-spending>$478.33</h2>
+            <div class="spending-change-section">
+              <h4 class="spending-change-number" data-spending-change>+2.4%</h3>
+              <p>from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body></body>
+</html>
